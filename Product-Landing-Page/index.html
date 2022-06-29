@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Product landing page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id="header">
+            <img src="frent.svg" alt="logo" id="header-img">
+            <nav id="nav-bar">
+                <ul class="navList" id="navlink-items">
+                    <li class="nav_item"><a href="#header" class="nav-link">Features</a></li>
+                    <li class="nav_item"><a href="#videos-div" class="nav-link">How it works</a></li>
+                    <li class="nav_item"><a href="#paymentPlan-div" class="nav-link">Pricing</a></li>
+                </ul>
+            </nav>
+            <img src="menu_open.png" alt="menu open" id="menu-open" onclick="togglemenu()">
+        </header>
+        <br>
+        <div id="section">
+            <div id="form-div">
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input type="email" id="email" placeholder="Enter your email address" required>
+                    <input type="submit" name="Submit" id="submit">
+                </form>
+            </div>
+            <br>
+            <div id="customerinfo-div">
+                <table style="width: 100%;">
+                    <tr>
+                        <td><img src="game-controller.png" alt="Icon made by juicy_fish from www.flaticon.com" class="imgicon" style="width: 80px; height:80px;"></td>
+                        <td>
+                            <h4 style="font-weight: bold;">Streaming</h4>
+                            <p>Explain how do you stream games</p> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="game-development.png" class="imgicon" style="width: 80px; height:80px;"></td>
+                        <td>
+                            <h4 style="font-weight: bold;">Game development</h4>
+                            <p>Explain how do you develop games</p>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td><img src="puzzle.png" alt="Icon made by Freepic from www.flaticon.com" class="imgicon" style="width: 80px; height:80px;"></td>
+                        <td>
+                            <h4 style="font-weight: bold;">Sales</h4>
+                            <p>Explain how do you sell your games games</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div id="videos-div">
+                    <iframe id="video" width="734" height="413" src="https://www.youtube.com/embed/SK7MnJ1RHbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="paymentPlan-div">
+                <!--Card 1-->
+                <div class="card" id="card1">
+                        <div class="icon">
+                            <i class="fas fa-user-alt">N$2500/mo</i>
+                        </div>
+                        <h4>PREMIUM GAME PACK</h4>
+                    <p class="incard">+8Hours of GamePlay</p>
+                    <p class="incard">Game Launch Event</p>
+                    <p class="incard">AR/VR</p>
+                    <p class="incard">5K Game Play</p>
+                    <p class="incard">Metaverse</p>
+                    <p class="incard">DOBLY ATMOS Sound</p>
+                    <button>Select</button>
+                </div>
+                <!--Card 2-->
+                <div class="card" id="card2">
+                        <div class="icon">
+                            <i class="fas fa-user-alt">N$1500/mo</i>
+                        </div>
+                        <h4>ESSENTIAL GAME PACK</h4>
+                    <p class="incard">+4Hours of GamePlay</p>
+                    <p class="incard">Game Launch Event</p>
+                    <p class="incard">PS5</p>
+                    <p class="incard">5K Game Play</p>
+                    <p class="incard">DOBLY ATMOS Sound</p>
+                    <button>Select</button>
+                </div>
+                <!--Card 3-->
+                <div class="card" id="card3">
+                    <div class="icon">
+                            <i class="fas fa-user-alt">N$1000/mo</i>
+                        </div>
+                        <h4>MICRO GAME PACK</h4>
+                    <p class="incard">+2Hours of GamePlay</p>
+                    <p class="incard">Game Launch Event</p>
+                    <p class="incard">PS5</p>
+                    <p class="incard">4K Game Play</p>
+                    <button>Select</button>
+                </div>
+            </div>
+            <!--End of pricings division-->
+        </div>
+        <br>
+        <footer>
+            <div id="privacy">
+                <a href="#" alt="privacy" target="_blank"><h9>Privacy</h9></a>
+                <a href="#" alt="terms" target="_blank"><h9>Terms</h9></a>
+                <a href="#" alt="contact" target="_blank"><h9>Contact</h9></a>
+            </div>
+            &copy; 2022 Author: Frans Nambuli NT
+
+            <img src="FransIMG.jpg" alt="Author Image" id="footer-img">
+            <div class="reachMe">
+                <a href="https://www.instagram.com/namfr11/" rel="noopener" alt="Instagram" target="_blank"><img src="instagram.png" href="https://www.flaticon.com/free-icons/instagram" title="instagram icons" alt="Instagram icons created by Laisa Islam Ani - Flaticon" class="socicons"></a>
+                <a href="https://twitter.com/Frans03306900" rel="noopener" alt="Twitter" target="_blank"><img src="twitter.png" href="https://www.flaticon.com/free-icons/twitter" title="twitter icons" alt="Twitter icons created by Hight Quality Icons - Flaticon" class="socicons"></a>
+                <a href="https://www.linkedin.com/in/frans-nambuli-ll-6497181a6/" rel="noopener" alt="LinkedIn" target="_blank"><img src="linkedin.png" href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons" alt="Linkedin icons created by Freepik - Flaticon" class="socicons"></a>
+                <a href="https://www.facebook.com/talktoDevFrans" rel="noopener" alt="Facebook" target="_blank"><img src="facebook.png" href="https://www.flaticon.com/free-icons/facebook" title="facebook icons" alt="Facebook icons created by Freepik - Flaticon" class="socicons"></a>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

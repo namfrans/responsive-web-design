@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Survey Page</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+            <header>
+                <img src="lucidlogo.svg" alt="logo">
+                <h1 id="title">Survey Form</h1>
+                <p id="description">Thank you for taking time for helping us improve our cars</p>
+            </header>
+        <div class="section">
+            <!--Form section starts here under the division of class named "section"-->
+            <form id="survey-form">
+                <label id="name-label" for="name" class="labels1">Name</label>
+                <input type="text" id="name" name="Name" placeholder="Enter your name" required>
+                <label id="email-label" for="email" class="labels1">Email</label>
+                <input type="email" id="email" name="Email" placeholder="Enter your email" required>
+                <label id="number-label" for="number" class="labels1">Age (optional)</label>
+                <input type="number" id="number" name="Age" placeholder="Age" min="16" max="120">
+                <label for="dropdown" class="labels1">Which option best describes your current role?</label>
+                
+                <!--Dropdown for user role-->
+                <select id="dropdown" name="Role" required>
+                    <option value="" disabled selected>Select current role</option>
+                    <option value="Role1">Student</option>
+                    <option value="Role2">Full-time job</option>
+                    <option value="Role3">Full-time Learner</option>
+                    <option value="Role4">Prefer not to say</option>
+                    <option value="Role5">Other</option>
+                </select>
+
+                <!--Radio buttons-->
+                <legend>Would you recommend our cars to a friend?</legend>
+                <label id="definitely-label" for="definitely" class="radiopart">Definitely
+                <input type="radio" id="definitely" name="radio-name" value="Definitely">
+                <span class="checkmark"></span>
+                </label>
+                <label id="maybe-label" for="maybe" class="radiopart">Maybe
+                <input type="radio" id="maybe" name="radio-name" value="Maybe">
+                <span class="checkmark"></span>
+                </label>
+                <label id="notsure-label" for="notsure" class="radiopart">Not sure
+                <input type="radio" id="notsure" name="radio-name" value="Not sure">
+                <span class="checkmark"></span>
+                </label>
+                <!--  Dropdown to select features-->
+                <label for="dropdown2" class="labels1">What is your favorite tech feature on a LUCID?</label>
+                <select id="dropdown2" name="feature" required>
+                    <option value=""  disabled selected>Select an option</option>
+                    <option value="feature1">3.4' INCH 5k Display</option>
+                    <option value="feature2"> Alexa technology</option>
+                    <option value="feature3">I-Pad like touchscreen</option>
+                    <option value="feature4">USB Ports</option>
+                    <option value="feature5">Wireless smartphone charger</option>
+                    <option value="feature6">Audio System</option>
+                </select>
+
+                <!--  Checkboxes-->
+                <legend>What would you like to see improved? (check all that apply)</legend>
+                <label id="front-label" for="front-end" class="checkboxes">Speed
+                <input type="checkbox" id="front-end" value="Front-end" name="checkbox-name">
+                <span class="checkmark2"></span>
+                </label>
+                <label id="back-label" for="back-end" class="checkboxes">Fuel Economy
+                <input type="checkbox" id="back-end" value="Back-end" name="checkbox-name">
+                <span class="checkmark2"></span>
+                </label>
+                <label id="datav-label" for="datav" class="checkboxes">Transmisions
+                <input type="checkbox" id="datav" value="DataVisualization" name="checkbox-name">
+                <span class="checkmark2"></span>
+                </label>
+                <label id="challenge-label" for="challenges" class="checkboxes">Brake suspension
+                <input type="checkbox" id="challenges" value="Challenge" name="checkbox-name">
+                <span class="checkmark2"></span>
+                </label>
+                <label id="osc-label" for="osc" class="checkboxes">Powertrain
+                <input type="checkbox" id="osc" value="OpenSourceCommunity" name="checkbox-name">
+                <span class="checkmark2"></span>
+                </label>
+                <label id="gitter-label" for="gitter" class="checkboxes">Seats
+                <input type="checkbox" id="gitter" value="GitterHelp" name="checkbox-name">
+                <span class="checkmark2"></span>
+                </label>
+                <label id="videos-label" for="videos" class="checkboxes">Top roof
+                <input type="checkbox" id="videos" value="Videos" name="checkbox-name">
+                <span class="checkmark2"></span>
+                </label>
+                <label id="meetups-label" for="citymeetups" class="checkboxes">Handling
+                <input type="checkbox" id="citymeetups" value="meetups" name="checkbox-name">
+                <span class="checkmark2"></span>
+                </label>
+                <label id="wiki-label" for="wiki" class="checkboxes">Dashboard
+                <input type="checkbox" id="wiki" value="Wiki" name="checkbox-name">
+                <span class="checkmark2"></span>
+                </label>
+                <label id="forum-label" for="forum" class="checkboxes">Customer service
+                <input type="checkbox" id="forum" value="Forum" name="checkbox-name">
+                <span class="checkmark2"></span>
+                </label>
+                <label id="addcourses-label" for="addcourses" class="checkboxes">Sale services
+                <input type="checkbox" id="addcourses" value="Addcourses" name="checkbox-name">
+                <span class="checkmark2"></span>
+                </label>
+
+                <label id="comments" for="comments-textarea" class="labels1">Any comments or suggestions?</label>
+                <textarea id="comments-textarea" placeholder="Enter your comment here..."></textarea>
+                <br>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+        <br>
+        <img src="FransIMG.jpg" alt="Author Image" id="footer-img">
+        <footer>&copy; 2022 Author: Frans Nambuli NT.</footer>
+        <div class="reachMe">
+            <a href="https://www.instagram.com/namfr11/" rel="noopener" alt="Instagram" target="_blank"><img src="https://cdn-icons.flaticon.com/png/128/3955/premium/3955024.png?token=exp=1641327127~hmac=666c9bed0b2d7e213d77d7113f92bb58" alt="instagram" class="icons"></a>
+            <a href="https://twitter.com/Frans03306900" rel="noopener" alt="Twitter" target="_blank"><img src="https://cdn-icons.flaticon.com/png/128/3670/premium/3670127.png?token=exp=1641327937~hmac=789c4c19109ecc0d49418ede07e06a6c" alt="twitter" class="icons"></a>
+            <a href="https://www.linkedin.com/in/frans-nambuli-ll-6497181a6/" rel="noopener" alt="LinkedIn" target="_blank"><img src="https://cdn-icons.flaticon.com/png/128/1377/premium/1377213.png?token=exp=1641327745~hmac=c168f7c0ccfc5df85062f34370207ec6" alt="linkedIn" class="icons"></a>
+            <a href="https://www.facebook.com/talktoDevFrans" rel="noopener" alt="Facebook" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="facebook" class="icons"></a>
+        </div>
+    </body>
+</html>
